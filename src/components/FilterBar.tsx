@@ -47,7 +47,9 @@ const FilterBar = () => {
         </Select>
       </div>
       <div className="pt-4 sm:pt-4  sm:block sm:flex-[0_0_auto] ">
-        <Button className="justify-center items-center">Find Now</Button>
+        <Button size={"lg"} className="justify-center items-center">
+          Find Now
+        </Button>
       </div>
     </div>
   );

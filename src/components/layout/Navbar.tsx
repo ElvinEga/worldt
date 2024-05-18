@@ -116,34 +116,36 @@ export default function NavBar() {
         </Sheet>
         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
           <div className="ml-auto flex items-center gap-4">
-            <Select>
-              <SelectTrigger>
-                <SelectValue placeholder="English" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="EN">English</SelectItem>
-                <SelectItem value="FRN">French</SelectItem>
-                <SelectItem value="JPN">Japanese</SelectItem>
-              </SelectContent>
-            </Select>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost">USD</Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>EUR</DropdownMenuItem>
-                <DropdownMenuItem>AUD</DropdownMenuItem>
-                <DropdownMenuItem>CAD</DropdownMenuItem>
-                <DropdownMenuItem>JPN</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <Button
-              variant="outline"
-              size="icon"
-              className="md:ml-10 ml-auto h-8 w-12 "
-            >
-              <ModeToggle />
-            </Button>
+            <div className="md:flex sm:hidden hidden">
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="English" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="EN">English</SelectItem>
+                  <SelectItem value="FRN">French</SelectItem>
+                  <SelectItem value="JPN">Japanese</SelectItem>
+                </SelectContent>
+              </Select>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost">USD</Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem>EUR</DropdownMenuItem>
+                  <DropdownMenuItem>AUD</DropdownMenuItem>
+                  <DropdownMenuItem>CAD</DropdownMenuItem>
+                  <DropdownMenuItem>JPN</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+              <Button
+                variant="outline"
+                size="icon"
+                className="md:ml-10 ml-auto h-8 w-12 "
+              >
+                <ModeToggle />
+              </Button>
+            </div>
             <Button variant="outline">Sign In</Button>
             <Button>Book Now</Button>
           </div>

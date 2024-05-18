@@ -14,7 +14,7 @@ const LandingLayout = ({ children }: contentProps) => {
       {children}
       {/* End Content */}
       {/* ========== END MAIN CONTENT ========== */}
-      <Toaster />
+      {/* <Toaster /> */}
     </div>
   );
 };
