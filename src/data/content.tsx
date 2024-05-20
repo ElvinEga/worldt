@@ -8,6 +8,45 @@ import {
   UserIcon,
 } from "lucide-react";
 
+export const paymentBrands = [
+  {
+    title: "paypal",
+    icon: "/icons/payment/paypal.png",
+  },
+  {
+    title: "cashapp",
+    icon: "/icons/payment/cashapp.png",
+  },
+  {
+    title: "bitcoin",
+    icon: "/icons/payment/bitcoin.png",
+  },
+  // {
+  //   title: "mastercard",
+  //   icon: "/icons/payment/mastercard.png",
+  // },
+  {
+    title: "discover",
+    icon: "/icons/payment/discover.png",
+  },
+  {
+    title: "payoneer",
+    icon: "/icons/payment/payoneer.png",
+  },
+  // {
+  //   title: "skrill",
+  //   icon: "/icons/payment/skrill.png",
+  // },
+  {
+    title: "visa",
+    icon: "/icons/payment/visa.png",
+  },
+  {
+    title: "stripe",
+    icon: "/icons/payment/stripe.png",
+  },
+];
+
 export const projectsData = [
   {
     id: 1,

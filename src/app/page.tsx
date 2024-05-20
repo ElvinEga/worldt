@@ -9,6 +9,7 @@ import { Packages } from "../components/Packages";
 import { TravelWithUs } from "../components/TravelWithUs";
 import { Brands } from "../components/Brands";
 import { Footer } from "../components/Footer";
+import { TopLocations } from "../components/TopLocations";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Packages />
           <TravelWithUs />
           <Brands />
+          <TopLocations />
           <Footer />
         </div>
       </LandingLayout>
