@@ -9,6 +9,10 @@ import { Packages } from "../components/Packages";
 import { TravelWithUs } from "../components/TravelWithUs";
 import { Brands } from "../components/Brands";
 import { Footer } from "../components/Footer";
+import { TopLocations } from "../components/TopLocations";
+import { Banners } from "../components/Banners";
+import { Contact } from "../components/Contact";
+import { Blog } from "../components/Blog";
 
 export default function Home() {
   return (
@@ -19,10 +23,14 @@ export default function Home() {
           <Destinations />
           <About />
           <Categories />
+          <Banners />
           <HowItWorks />
           <Packages />
           <TravelWithUs />
           <Brands />
+          <TopLocations />
+          <Blog />
+          <Contact />
           <Footer />
         </div>
       </LandingLayout>
