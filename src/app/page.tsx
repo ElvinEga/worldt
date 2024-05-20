@@ -13,6 +13,7 @@ import { TopLocations } from "../components/TopLocations";
 import { Banners } from "../components/Banners";
 import { Contact } from "../components/Contact";
 import { Blog } from "../components/Blog";
+import { OurTeam } from "../components/OurTeam";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <Brands />
           <TopLocations />
           <Blog />
+          <OurTeam />
           <Contact />
           <Footer />
         </div>

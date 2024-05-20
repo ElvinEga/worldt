@@ -34,6 +34,28 @@ export const banners = [
     img: "https://travila.netlify.app/assets/imgs/page/homepage1/walking2.png",
   },
 ];
+export const teams = [
+  {
+    name: "Malissa Fierro",
+    img: "/icons/payment/paypal.png",
+    title: "Tour Guide",
+  },
+  {
+    name: "Florence Long",
+    img: "/icons/payment/paypal.png",
+    title: "Tour Guide",
+  },
+  {
+    name: "Melvin Castillo",
+    img: "/icons/payment/paypal.png",
+    title: "Tour Guide",
+  },
+  {
+    name: "John Welsh",
+    img: "/icons/payment/paypal.png",
+    title: "Tour Guide",
+  },
+];
 
 export const paymentBrands = [
   {
