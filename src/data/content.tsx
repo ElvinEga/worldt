@@ -8,6 +8,33 @@ import {
   UserIcon,
 } from "lucide-react";
 
+export const banners = [
+  {
+    title: "Waking up in a far away place",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage2/banner1.png",
+  },
+  {
+    title: "Big promotion at the end of the year",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage2/banner2.png",
+  },
+  {
+    title: "Waking up in a far away place",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage1/walking.png",
+  },
+  {
+    title: "The Adventure starts today",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage1/advance.png",
+  },
+  {
+    title: "Start uor Journey Now",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage1/vacation.png",
+  },
+  {
+    title: "Waking up in a far away place",
+    img: "https://travila.netlify.app/assets/imgs/page/homepage1/walking2.png",
+  },
+];
+
 export const paymentBrands = [
   {
     title: "paypal",
@@ -295,6 +322,29 @@ export const packages = {
       title: "Goa India",
       desc: "Starting From $1500",
       url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey3.png",
+    },
+  ],
+};
+
+export const blogs = {
+  title: "News, Tips & Guides",
+  desc: "Favorite destinations based on customer reviews",
+  data: [
+    {
+      title: "Top 10 Travel Hacks for Budget-Conscious Adventurers",
+      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news.png",
+    },
+    {
+      title: "Ultimate Travel Planning Guide: 10 Tips for a Seamless Journey",
+      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news2.png",
+    },
+    {
+      title: "10 Off-the-Beaten-Path Travel Tips",
+      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news3.png",
+    },
+    {
+      title: "Travel in style in this 10 ten Mountain places",
+      url: "https://shreethemes.in/travosy/layouts/assets/images/listing/3.jpg",
     },
   ],
 };
