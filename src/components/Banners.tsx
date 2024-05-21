@@ -24,7 +24,7 @@ export const Banners = () => {
     setIsAutoplay(true);
   }, []);
   return (
-    <section className="p-12">
+    <section className="p-12 bg-secondary">
       <div className="max-w-full md:pb-4 mx-auto">
         <div className="flex flex-wrap lg:px-0 sm:px-8 px-8">
           <Carousel

@@ -6,7 +6,7 @@ export const TopLocations = () => {
   return (
     <section className="container py-12">
       {/* Features */}
-      <div className="mx-auto">
+      <div className="mx-auto pb-16">
         {/* Title */}
         <div
           className="jos mx-auto  mb-12 items-center text-center"
