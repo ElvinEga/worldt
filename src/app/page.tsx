@@ -17,6 +17,7 @@ import { OurTeam } from "../components/OurTeam";
 import { Testmonials } from "../components/Testimonials";
 import { Stats } from "../components/Stats";
 import { Video } from "../components/Video";
+import ScrollToTopButton from "../components/ui/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
           <OurTeam />
           <Contact />
           <Footer />
+          <ScrollToTopButton />
         </div>
       </LandingLayout>
     </main>

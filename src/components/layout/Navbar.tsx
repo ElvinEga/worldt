@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import { Menu, Package2 } from "lucide-react";
+import { ArrowRight, Mail, Menu, Package2, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -8,6 +10,15 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+
 import {
   Select,
   SelectContent,
@@ -18,10 +29,59 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ModeToggle";
 import React from "react";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
     <div className="flex container w-full flex-col">
+      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+        <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+          {/* <Link
+              href="#"
+              className="flex items-center gap-2 text-lg font-semibold md:text-base"
+            >
+              <Package2 className="h-6 w-6" />
+              <span className="sr-only">Acme Inc</span>
+            </Link> */}
+          <Link className="inline-flex items-center" href="#">
+            <Phone className="size-4 mx-2" /> +2 123 4567 897
+          </Link>
+          <Link className="inline-flex items-center" href="#">
+            <Mail className="size-4 mx-2" /> email protected
+          </Link>
+        </div>
+        <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
+          <div className="ml-auto flex items-center gap-4">
+            <div className="md:flex sm:hidden hidden">
+              <div className="md:mx-4 ml-auto h-8 w-12 ">
+                <ModeToggle />
+              </div>
+              <Select>
+                <SelectTrigger>
+                  <SelectValue placeholder="English" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="EN">English</SelectItem>
+                  <SelectItem value="FRN">French</SelectItem>
+                  <SelectItem value="JPN">Japanese</SelectItem>
+                </SelectContent>
+              </Select>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost">USD</Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem>EUR</DropdownMenuItem>
+                  <DropdownMenuItem>AUD</DropdownMenuItem>
+                  <DropdownMenuItem>CAD</DropdownMenuItem>
+                  <DropdownMenuItem>JPN</DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+            <Button variant="outline">Login</Button>
+          </div>
+        </div>
+      </header>
       <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <nav className="hidden flex-col justify-center gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <div className="md:mr-12">
@@ -29,40 +89,10 @@ export default function NavBar() {
               href="#"
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
             >
-              <Package2 className="h-6 w-6" />
+              <Image src="/logo.png" alt="logo" width={160} height={40} />
               <span className="sr-only">Acme Inc</span>
             </Link>
           </div>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Home
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Destinations
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Tours
-          </Link>
-          <Link
-            href="#"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            Blog
-          </Link>
-          <Link
-            href="#"
-            className="text-foreground transition-colors hover:text-foreground"
-          >
-            Contact
-          </Link>
         </nav>
         <Sheet>
           <SheetTrigger asChild>
@@ -116,34 +146,53 @@ export default function NavBar() {
         </Sheet>
         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
           <div className="ml-auto flex items-center gap-4">
-            <div className="md:flex sm:hidden hidden">
-              <Select>
-                <SelectTrigger>
-                  <SelectValue placeholder="English" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="EN">English</SelectItem>
-                  <SelectItem value="FRN">French</SelectItem>
-                  <SelectItem value="JPN">Japanese</SelectItem>
-                </SelectContent>
-              </Select>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost">USD</Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                  <DropdownMenuItem>EUR</DropdownMenuItem>
-                  <DropdownMenuItem>AUD</DropdownMenuItem>
-                  <DropdownMenuItem>CAD</DropdownMenuItem>
-                  <DropdownMenuItem>JPN</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-              <div className="md:ml-10 ml-auto h-8 w-12 ">
-                <ModeToggle />
-              </div>
-            </div>
-            <Button variant="outline">Sign In</Button>
-            <Button>Book Now</Button>
+            <nav className="hidden flex-col justify-center gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      Home
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Destinations</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <NavigationMenuLink>Link</NavigationMenuLink>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Tours</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <NavigationMenuLink>Link</NavigationMenuLink>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Pages</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <NavigationMenuLink>Link</NavigationMenuLink>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+              <Link
+                href="#"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                Blog
+              </Link>
+              <Link
+                href="#"
+                className="text-foreground transition-colors hover:text-foreground"
+              >
+                Contact
+              </Link>
+            </nav>
+            <Button className="md:ml-10 p-5">
+              BOOK NOW <ArrowRight />
+            </Button>
           </div>
         </div>
       </header>

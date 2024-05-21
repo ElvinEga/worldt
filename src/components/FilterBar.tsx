@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Search } from "lucide-react";
 
 const FilterBar = () => {
   return (
@@ -47,8 +48,8 @@ const FilterBar = () => {
         </Select>
       </div>
       <div className="pt-4 sm:pt-4  sm:block sm:flex-[0_0_auto] ">
-        <Button size={"lg"} className="justify-center items-center">
-          Find Now
+        <Button size={"lg"} className="justify-center items-center text-lg">
+          <Search className="size-5 mr-2" /> Find Now
         </Button>
       </div>
     </div>
