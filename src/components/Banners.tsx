@@ -11,6 +11,7 @@ import {
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 import Autoplay from "embla-carousel-autoplay";
 import { banners } from "../data/content";
+import { ArrowRight } from "lucide-react";
 
 export const Banners = () => {
   const [isAutoplay, setIsAutoplay] = useState(true);
@@ -51,7 +52,7 @@ export const Banners = () => {
                       </div>
 
                       <div className="absolute top-0 inset-x-0 z-10 mt-12 w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                        <span className="block font-bold text-primary-foreground text-xl md:text-4xl">
+                        <span className="block font-bold text-primary text-xl md:text-4xl">
                           {item.title}
                         </span>
                         <div className="mt-5">
@@ -59,7 +60,7 @@ export const Banners = () => {
                             className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-primary border border-transparent text-primary-foreground hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
                             href="#"
                           >
-                            View More
+                            View More <ArrowRight />
                           </a>
                         </div>
                       </div>

@@ -1,8 +1,10 @@
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="mt-auto bg-gray-900 w-full dark:bg-neutral-950">
+    <footer className="mt-auto bg-blue-900 w-full dark:bg-neutral-950">
       <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
         {/* Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -12,19 +14,25 @@ export const Footer = () => {
               href="#"
               aria-label="Brand"
             >
-              Exploregeotravel
+              <Image src="/logo.png" alt="logo" width={160} height={40} />
             </a>
+            <p className="mt-5 text-primary-foreground">
+              There are many variations of the passages available the majority
+              have suffered alteration in some form by injected humour.
+            </p>
           </div>
           {/* End Col */}
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Product</h4>
-            <div className="mt-3 grid space-y-3">
+            <h4 className="font-semibold text-primary-foreground text-2xl">
+              Quick Links
+            </h4>
+            <div className="mt-6 grid space-y-3 ">
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
                   href="#"
                 >
-                  Pricing
+                  About Us
                 </a>
               </p>
               <p>
@@ -32,7 +40,7 @@ export const Footer = () => {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
                   href="#"
                 >
-                  Changelog
+                  FAQ's
                 </a>
               </p>
               <p>
@@ -40,55 +48,61 @@ export const Footer = () => {
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
                   href="#"
                 >
-                  Docs
+                  Terms Of Service
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  href="#"
+                >
+                  Privacy policy
+                </a>
+              </p>
+              <p>
+                <a
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  href="#"
+                >
+                  Our Services
                 </a>
               </p>
             </div>
           </div>
           {/* End Col */}
           <div className="col-span-1">
-            <h4 className="font-semibold text-gray-100">Company</h4>
-            <div className="mt-3 grid space-y-3">
+            <h4 className="font-semibold text-primary-foreground text-2xl">
+              Contact Us
+            </h4>
+            <div className="mt-6 grid space-y-3 ">
               <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  About us
-                </a>
+                <p className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200">
+                  <MapPin className="text-primary" /> 15/B Road, New York, USA
+                </p>
               </p>
               <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Blog
-                </a>
+                <p className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200">
+                  <Phone className="text-primary" /> +2 123 4567 897
+                </p>
               </p>
               <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Careers
-                </a>{" "}
-                <span className="inline ms-1 text-xs bg-blue-700 text-white py-1 px-2 rounded-lg">
-                  We're hiring
-                </span>
+                <p className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200">
+                  <Mail className="text-primary" /> email protected
+                </p>
               </p>
-              <p>
-                <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  href="#"
-                >
-                  Customers
-                </a>
+              <p className="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:text-neutral-400 dark:hover:text-neutral-200">
+                <Clock className="text-primary" /> Sun - Fri (10AM - 08PM)
               </p>
             </div>
           </div>
           {/* End Col */}
           <div className="col-span-2">
-            <h4 className="font-semibold text-gray-100">Stay up to date</h4>
+            <h4 className="font-semibold text-primary-foreground text-2xl">
+              Newsletter
+            </h4>
+            <p className="mt-6 text-primary-foreground">
+              Subscribe Our Newsletter To Get Latest Update And News.
+            </p>
             <form>
               <div className="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-neutral-900">
                 <div className="w-full">
@@ -104,7 +118,7 @@ export const Footer = () => {
                   />
                 </div>
                 <a
-                  className="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                  className="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-primary disabled:opacity-50 disabled:pointer-events-none"
                   href="#"
                 >
                   Subscribe

@@ -11,15 +11,15 @@ import { reasons } from "../data/content";
 
 export const TravelWithUs = () => {
   return (
-    <section className="container py-12">
+    <section className="py-12 bg-secondary ">
       {/* Features */}
-      <div className="mx-auto">
+      <div className="mx-auto container  pb-8">
         {/* Title */}
         <div
           className="jos mx-auto  mb-12 items-center text-center"
           data-jos_animation="zoom"
         >
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             Why Travel With Us?
           </h1>
           <p className="text-lg text-muted-foreground">

@@ -11,7 +11,7 @@ export const HowItWorks = () => {
           className="jos mx-auto  mb-12 items-center text-center"
           data-jos_animation="zoom"
         >
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             How It Works
           </h1>
           <p className="text-lg text-muted-foreground">
@@ -158,7 +158,7 @@ export const HowItWorks = () => {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
-                      src="https://creativelayers.net/themes/gotrip-html/img/backgrounds/5.png"
+                      src="/assets/img/blog/1.jpg"
                       alt="Image Description"
                     />
                   </div>

@@ -34,7 +34,7 @@ import Image from "next/image";
 export default function NavBar() {
   return (
     <div className="flex container w-full flex-col">
-      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+      <header className="hidden md:flex  top-0  h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
           {/* <Link
               href="#"
@@ -44,7 +44,7 @@ export default function NavBar() {
               <span className="sr-only">Acme Inc</span>
             </Link> */}
           <Link className="inline-flex items-center" href="#">
-            <Phone className="size-4 mx-2" /> +2 123 4567 897
+            <Phone className="size- mx-2" /> +2 123 4567 897
           </Link>
           <Link className="inline-flex items-center" href="#">
             <Mail className="size-4 mx-2" /> email protected
@@ -90,7 +90,7 @@ export default function NavBar() {
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
             >
               <Image src="/logo.png" alt="logo" width={160} height={40} />
-              <span className="sr-only">Acme Inc</span>
+              <span className="sr-only">worldT</span>
             </Link>
           </div>
         </nav>
