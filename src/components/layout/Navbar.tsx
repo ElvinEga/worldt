@@ -138,13 +138,9 @@ export default function NavBar() {
                   <DropdownMenuItem>JPN</DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Button
-                variant="outline"
-                size="icon"
-                className="md:ml-10 ml-auto h-8 w-12 "
-              >
+              <div className="md:ml-10 ml-auto h-8 w-12 ">
                 <ModeToggle />
-              </Button>
+              </div>
             </div>
             <Button variant="outline">Sign In</Button>
             <Button>Book Now</Button>

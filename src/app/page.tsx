@@ -13,6 +13,10 @@ import { TopLocations } from "../components/TopLocations";
 import { Banners } from "../components/Banners";
 import { Contact } from "../components/Contact";
 import { Blog } from "../components/Blog";
+import { OurTeam } from "../components/OurTeam";
+import { Testmonials } from "../components/Testimonials";
+import { Stats } from "../components/Stats";
+import { Video } from "../components/Video";
 
 export default function Home() {
   return (
@@ -29,7 +33,11 @@ export default function Home() {
           <TravelWithUs />
           <Brands />
           <TopLocations />
+          <Testmonials />
           <Blog />
+          <Stats />
+          <Video />
+          <OurTeam />
           <Contact />
           <Footer />
         </div>
