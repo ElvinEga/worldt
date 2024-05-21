@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Brands = () => {
   return (
-    <section className="container pt-12 overflow-x-hidden overscroll-x-none">
+    <section className="container pt-16 overflow-x-hidden overscroll-x-none">
       <div
         className="jos  mx-auto"
         data-jos_once="1"

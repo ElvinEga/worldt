@@ -13,7 +13,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "jos grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-4 gap-4  mx-auto ",
+        "jos grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-4 gap-4  mx-auto",
         className
       )}
       id="projects"
@@ -51,31 +51,34 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-lg group/bento hover:shadow-xl transition duration-200 p-0 isolate border border-white/10 shadow-lg ring-1 ring-black/5 gradient-card justify-between flex flex-col space-y-2",
+        "row-span-1 rounded-2xl  group/bento hover:shadow-xl transition duration-200 p-0 isolate border border-white/10 shadow-lg ring-1 ring-black/5 gradient-card justify-between flex flex-col space-y-2",
         className
       )}
     >
-      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm">
-        <img
-          className="object-cover object-center h-full w-full rounded-sm"
-          alt={"image"}
-          src={image || ""}
-          sizes="100vw"
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          width={1200}
-          height={600}
-        />
-      </div>
-
-      <div className=" p-4 group-hover/bento:translate-x-2 transition duration-200">
-        <div className="font-sans font-bold text-foreground mb-1">{title}</div>
-        <div className="font-sans font-normal text-xs text-muted-foreground">
-          {description}
+      <div className="relative  w-full h-full">
+        <div className="flex flex-1 w-full h-full min-h-[6rem]  ">
+          <img
+            className="object-cover object-center h-full w-full rounded-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+            alt={"image"}
+            src={image || ""}
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+            width={1200}
+            height={600}
+          />
         </div>
-        {/* <Link
+        <div className="absolute bottom-0 inset-x-0 z-10">
+          <div className=" p-4 group-hover/bento:translate-x-2 transition duration-200">
+            <div className="font-sans font-bold text-primary-foreground text-3xl mb-1">
+              {title}
+            </div>
+            <div className="font-sans font-normal text-lg text-white">
+              {description}
+            </div>
+            {/* <Link
           href={url}
           target="_blank"
           aria-label={"project"}
@@ -94,6 +97,8 @@ export const BentoGridItem = ({
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
         </Link> */}
+          </div>
+        </div>
       </div>
     </div>
   );

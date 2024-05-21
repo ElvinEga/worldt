@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.navbar.is-sticky {
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+}
+
 @layer base {
   :root {
     --background: 0 0% 98.04%;
