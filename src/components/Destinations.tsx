@@ -27,7 +27,7 @@ export const Destinations = () => {
       <div className="max-w-full  md:pb-4 mx-auto">
         {/* Title */}
         <div className="jos mx-auto  mb-12" data-jos_animation="zoom">
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             {destinations.title}
           </h1>
           <p className="text-lg text-muted-foreground">{destinations.desc}</p>
@@ -47,8 +47,8 @@ export const Destinations = () => {
                 >
                   <div className="relative  flex items-center justify-center">
                     <DirectionAwareHover imageUrl={item.url}>
-                      <p className="font-bold text-xl">{item.title}</p>
-                      <p className="font-normal text-sm">{item.desc}</p>
+                      <p className="font-bold text-3xl">{item.title}</p>
+                      <p className="font-normal text-lg">{item.desc}</p>
                     </DirectionAwareHover>
                   </div>
                 </CarouselItem>

@@ -17,6 +17,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { blogs } from "../data/content";
+import { Star } from "lucide-react";
 export const Testmonials = () => {
   const [isAutoplay, setIsAutoplay] = useState(true);
 
@@ -28,15 +29,15 @@ export const Testmonials = () => {
     setIsAutoplay(true);
   }, []);
   return (
-    <section className="container py-12">
+    <section className="py-12 bg-secondary">
       {/* Features */}
-      <div className="mx-auto">
+      <div className="mx-auto container pb-8">
         {/* Title */}
         <div
           className="jos mx-auto  mb-12 items-center text-center"
           data-jos_animation="zoom"
         >
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             WHAT CLIENT SAY'S
           </h1>
           <p className="text-lg text-muted-foreground">
@@ -58,6 +59,48 @@ export const Testmonials = () => {
                   <div className="flex h-auto w-full">
                     <div className="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
                       <div className="flex-auto p-4 md:p-6">
+                        <ul className="text-lg font-medium list-none ms-2">
+                          <li className="inline">
+                            <Star
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
+                              className="inline  align-middle"
+                            />
+                          </li>
+                          <li className="inline">
+                            <Star
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
+                              className="inline  align-middle"
+                            />
+                          </li>
+                          <li className="inline">
+                            <Star
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
+                              className="inline  align-middle"
+                            />
+                          </li>
+                          <li className="inline">
+                            <Star
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
+                              className="inline  align-middle"
+                            />
+                          </li>
+                          <li className="inline">
+                            <Star
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
+                              className="inline  align-middle"
+                            />
+                          </li>
+                        </ul>
                         <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
                           " There are many variations of passages available but
                           the majority have suffered alteration in some form. "
@@ -68,7 +111,7 @@ export const Testmonials = () => {
                           <div className="flex-shrink-0">
                             <img
                               className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
-                              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                              src="/assets/img/testimonial/1.jpg"
                               alt="Image Description"
                             />
                           </div>
@@ -77,7 +120,7 @@ export const Testmonials = () => {
                               Josh Tyson
                             </p>
                             <p className="text-xs text-gray-500 dark:text-neutral-400">
-                              Product Manager | Capsule
+                              Traveller
                             </p>
                           </div>
                         </div>

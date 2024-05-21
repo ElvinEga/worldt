@@ -37,22 +37,22 @@ export const banners = [
 export const teams = [
   {
     name: "Malissa Fierro",
-    img: "/icons/payment/paypal.png",
+    img: "assets/img/team/team-1.jpg",
     title: "Tour Guide",
   },
   {
     name: "Florence Long",
-    img: "/icons/payment/paypal.png",
+    img: "assets/img/team/team-2.jpg",
     title: "Tour Guide",
   },
   {
     name: "Melvin Castillo",
-    img: "/icons/payment/paypal.png",
+    img: "assets/img/team/team-3.jpg",
     title: "Tour Guide",
   },
   {
     name: "John Welsh",
-    img: "/icons/payment/paypal.png",
+    img: "assets/img/team/team-4.jpg",
     title: "Tour Guide",
   },
 ];
@@ -261,42 +261,42 @@ export const destinations = {
     {
       title: "New York",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/1.webp",
+      url: "assets/img/destination/1.jpg",
     },
     {
       title: "London",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/2.webp",
+      url: "assets/img/destination/2.jpg",
     },
     {
       title: "Barcelona",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/3.webp",
+      url: "assets/img/destination/3.jpg",
     },
     {
       title: "Sydney",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/4.webp",
+      url: "assets/img/destination/4.jpg",
     },
     {
       title: "Rome",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/5.webp",
+      url: "assets/img/destination/5.jpg",
     },
     {
       title: "Singapore",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey4.png",
+      url: "assets/img/destination/6.jpg",
     },
     {
       title: "Paris",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/popular7.png",
+      url: "assets/img/destination/7.jpg",
     },
     {
       title: "Goa India",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey3.png",
+      url: "assets/img/destination/8.jpg",
     },
   ],
 };
@@ -308,42 +308,42 @@ export const packages = {
     {
       title: "New York",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/1.webp",
+      url: "assets/img/destination/1.jpg",
     },
     {
       title: "London",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/2.webp",
+      url: "assets/img/destination/2.jpg",
     },
     {
       title: "Barcelona",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/3.webp",
+      url: "assets/img/destination/3.jpg",
     },
     {
       title: "Sydney",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/4.webp",
+      url: "assets/img/destination/4.jpg",
     },
     {
       title: "Rome",
       desc: "Starting From $1500",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/5.webp",
+      url: "assets/img/destination/5.jpg",
     },
     {
       title: "Singapore",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey4.png",
+      url: "assets/img/destination/6.jpg",
     },
     {
       title: "Paris",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/popular7.png",
+      url: "assets/img/destination/7.jpg",
     },
     {
       title: "Goa India",
       desc: "Starting From $1500",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey3.png",
+      url: "assets/img/destination/8.jpg",
     },
   ],
 };
@@ -377,42 +377,42 @@ export const categories = {
     {
       title: "Mountain",
       desc: "356 Tours, 248 Activities",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/1.webp",
+      url: "assets/img/tour/2.jpg",
     },
     {
       title: "Safari",
       desc: "356 Tours, 248 Activities",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/2.webp",
+      url: "assets/img/tour/1.jpg",
     },
     {
       title: "Desert",
       desc: "356 Tours, 248 Activities",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/3.webp",
+      url: "assets/img/tour/3.jpg",
     },
     {
       title: "Flower",
       desc: "356 Tours, 248 Activities",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/4.webp",
+      url: "assets/img/tour/4.jpg",
     },
     {
       title: "Beach",
       desc: "356 Tours, 248 Activities",
-      url: "https://creativelayers.net/themes/gotrip-html/img/destinations/1/5.webp",
+      url: "assets/img/tour/5.jpg",
     },
     {
       title: "Temples",
       desc: "356 Tours, 248 Activities",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey4.png",
+      url: "assets/img/tour/6.jpg",
     },
     {
       title: "Yacht",
       desc: "356 Tours, 248 Activities",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey3.png",
+      url: "assets/img/tour/single.jpg",
     },
     {
       title: "Valley",
       desc: "356 Tours, 248 Activities",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/journey3.png",
+      url: "assets/img/tour/6.jpg",
     },
   ],
 };

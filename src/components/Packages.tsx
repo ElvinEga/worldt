@@ -19,7 +19,7 @@ import {
 import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
 import Autoplay from "embla-carousel-autoplay";
 import { packages } from "../data/content";
-import { Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 export const Packages = () => {
   const [isAutoplay, setIsAutoplay] = useState(true);
@@ -36,7 +36,7 @@ export const Packages = () => {
       <div className="max-w-full  md:pb-4 mx-auto">
         {/* Title */}
         <div className="jos mx-auto  mb-12" data-jos_animation="zoom">
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             {packages.title}
           </h1>
           <p className="text-lg text-muted-foreground">{packages.desc}</p>
@@ -73,34 +73,44 @@ export const Packages = () => {
                         <span className="text-secondary-foreground">
                           Rating:
                         </span>
-                        <ul className="text-lg font-medium text-amber-400 list-none ms-2">
+                        <ul className="text-lg font-medium list-none ms-2">
                           <li className="inline">
                             <Star
-                              size={"16"}
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
                               className="inline  align-middle"
                             />
                           </li>
                           <li className="inline">
                             <Star
-                              size={"16"}
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
                               className="inline  align-middle"
                             />
                           </li>
                           <li className="inline">
                             <Star
-                              size={"16"}
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
                               className="inline  align-middle"
                             />
                           </li>
                           <li className="inline">
                             <Star
-                              size={"16"}
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
                               className="inline  align-middle"
                             />
                           </li>
                           <li className="inline">
                             <Star
-                              size={"16"}
+                              fill="orange"
+                              size={"24"}
+                              strokeWidth={0}
                               className="inline  align-middle"
                             />
                           </li>
@@ -110,14 +120,14 @@ export const Packages = () => {
                         </ul>
                       </div>
                       <div className="pt-2 flex w-full justify-between items-center border-t border-slate-100 dark:border-gray-800">
-                        <h5 className="text-lg font-medium text-red-500">
+                        <h5 className="text-base font-medium text-primary">
                           $ 58 / Day
                         </h5>
                         <a
                           href=""
-                          className="text-slate-400 hover:text-red-500"
+                          className="inline-flex items-center text-base text-muted-foreground hover:text-primary"
                         >
-                          Explore Now <i className="mdi mdi-arrow-right" />
+                          Explore Now <ArrowRight className="ml-2 size-5" />
                         </a>
                       </div>
                     </CardFooter>

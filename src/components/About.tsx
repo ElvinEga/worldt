@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 export const About = () => {
   return (
@@ -10,11 +11,11 @@ export const About = () => {
           <div className="relative jos" data-jos_animation="fade-right">
             <img
               className="rounded-xl "
-              src="https://travila.netlify.app/assets/imgs/page/homepage1/news.png"
+              src="assets/img/about/1.jpg"
               alt="Image Description"
             />
-            <div className="absolute flex items-center top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
-              <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-red-500 text-center rounded-xl me-3">
+            <div className="absolute lg:flex md:flex  hidden items-center top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
+              <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-primary text-center rounded-xl me-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -42,8 +43,8 @@ export const About = () => {
                 </p>
               </div>
             </div>
-            <div className="absolute flex items-center bottom-16 md:-start-10 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 m-3">
-              <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-red-500 text-center rounded-xl me-3">
+            <div className="absolute lg:flex md:flex  hidden items-center bottom-16 md:-start-10 -start-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-56 m-3">
+              <div className="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-primary text-center rounded-xl me-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -95,7 +96,7 @@ export const About = () => {
               {/* List */}
               <ul className="space-y-2 sm:space-y-4">
                 <li className="flex space-x-3">
-                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-primary dark:bg-blue-800/30 dark:text-blue-500">
                     <svg
                       className="flex-shrink-0 size-3.5"
                       xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +120,7 @@ export const About = () => {
                   </span>
                 </li>
                 <li className="flex space-x-3">
-                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-primary dark:bg-blue-800/30 dark:text-blue-500">
                     <svg
                       className="flex-shrink-0 size-3.5"
                       xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +142,7 @@ export const About = () => {
                   </span>
                 </li>
                 <li className="flex space-x-3">
-                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-blue-600 dark:bg-blue-800/30 dark:text-blue-500">
+                  <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-blue-50 text-primary dark:bg-blue-800/30 dark:text-blue-500">
                     <svg
                       className="flex-shrink-0 size-3.5"
                       xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +163,12 @@ export const About = () => {
                   </span>
                 </li>
               </ul>
-              <Button size={"lg"}>Discover More</Button>
+              <Button
+                size={"lg"}
+                className="justify-center items-center text-lg p-6"
+              >
+                Discover More <ArrowRight className="ml-2" />
+              </Button>
               {/* End List */}
             </div>
           </div>

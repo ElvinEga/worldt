@@ -6,13 +6,13 @@ export const TopLocations = () => {
   return (
     <section className="container py-12">
       {/* Features */}
-      <div className="mx-auto">
+      <div className="mx-auto pb-16">
         {/* Title */}
         <div
           className="jos mx-auto  mb-12 items-center text-center"
           data-jos_animation="zoom"
         >
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             Explore Hot Locations
           </h1>
           <p className="text-lg text-muted-foreground">

@@ -11,7 +11,7 @@ export const Contact = () => {
           className="jos mx-auto  mb-12 items-center text-center"
           data-jos_animation="zoom"
         >
-          <h1 className="text-4xl mb-2 font-medium tracking-tight text-primary md:text-4xl">
+          <h1 className="text-4xl mb-2 font-bold tracking-tight text-primary md:text-5xl">
             Contact
           </h1>
           <p className="text-lg text-muted-foreground">
@@ -22,7 +22,7 @@ export const Contact = () => {
           <div className="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
             <img
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl w-full"
-              src="	https://travila.netlify.app/assets/imgs/template/subscriber.png"
+              src="assets/img/slider/slider-2.jpg"
               alt="Image Description"
             />
           </div>
