@@ -112,7 +112,7 @@ export default function NavBar() {
         <nav className="hidden flex-col justify-center gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <div className="md:mr-12">
             <Link
-              href="#"
+              href="/"
               className="flex items-center gap-2 text-lg font-semibold md:text-base"
             >
               <Image src="/logo.png" alt="logo" width={160} height={40} />
@@ -241,7 +241,56 @@ export default function NavBar() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Tours</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <NavigationMenuLink>Link</NavigationMenuLink>
+                      <ul className="flex-wrap p-2 min-w-64">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/tours/tour1"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Tour 1
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/tours/tour2"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Tour 2
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/tours/tour3"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Tour Offers
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/tours/details"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Tour Details
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
