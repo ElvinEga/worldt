@@ -12,6 +12,9 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { heros } from "../data/content";
 
+interface HomeComponentProps {
+  title: string;
+}
 export const Hero = () => {
   return (
     <>
@@ -286,7 +289,7 @@ export const Hero = () => {
   );
 };
 
-export const HeroDetails = () => {
+export const HeroDetails: React.FC<HomeComponentProps> = ({ title }) => {
   return (
     <>
       <div className="relative  overflow-hidden">
@@ -306,14 +309,14 @@ export const HeroDetails = () => {
           <div className="text-center">
             <div className="mt-5 max-w-2xl text-center mx-auto">
               <h1 className="block font-bold text-white text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-                Destinations
+                {title}
               </h1>
             </div>
             {/* End Title */}
             <div className="mt-5 max-w-3xl text-center mx-auto">
               <p className="text-primary-foreground">
                 Home {" >> "}
-                <span className="text-primary">Destinations</span>
+                <span className="text-primary">{title}</span>
               </p>
             </div>
           </div>

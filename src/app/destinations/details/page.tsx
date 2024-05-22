@@ -1,14 +1,18 @@
 import { Button } from "@/components/ui/button";
 import LandingLayout from "../../../components/layout/Landing";
 import { HeroDetails } from "../../../components/Hero";
+import { Footer } from "../../../components/Footer";
 import React from "react";
+import CountryTable from "../../../components/CountryTable";
+import { Card } from "../../../components/ui/card";
+import { File } from "lucide-react";
 
 export default function Destination1() {
   return (
     <main className="flex flex-1 flex-col">
       <LandingLayout>
         <div>
-          <HeroDetails></HeroDetails>
+          <HeroDetails title="Destinations"></HeroDetails>
           <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
             <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
               {/* Content */}
@@ -110,6 +114,23 @@ export default function Destination1() {
                         in culpa qui officia deserunt mollitia animi, id est
                         laborum et dolorum fuga.
                       </p>
+                      <CountryTable />
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-semibold dark:text-white">
+                        Location Map
+                      </h3>
+                      <p className="text-lg text-gray-800 dark:text-neutral-200">
+                        On the other hand, we denounce with righteous
+                        indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment, so
+                        blinded by desire, that they cannot foresee the pain and
+                        trouble that are bound to ensue; and equal blame belongs
+                        to those who fail in their duty through weakness of
+                        will, which is the same as saying through shrinking from
+                        toil and pain.
+                      </p>
+                      <CountryTable />
                     </div>
                   </div>
                 </div>
@@ -117,71 +138,115 @@ export default function Destination1() {
               {/* End Content */}
               {/* Sidebar */}
               <div className="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-neutral-800">
-                <div className="sticky top-0 start-0 py-8 lg:ps-8">
-                  {/* Avatar Media */}
-                  <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
-                    <h3 className="text-2xl font-semibold dark:text-white">
+                <Card className="mt-8 start-0 py-8 lg:ps-8">
+                  <div>
+                    <h3 className="text-2xl font-semibold dark:text-white ">
                       Featured Tours
                     </h3>
+                    <div className="space-y-6">
+                      {/* Media */}
+                      <a className="group flex items-center gap-x-6" href="#">
+                        <div className="flex-shrink-0 relative rounded-lg overflow-hidden h-20 w-32">
+                          <img
+                            className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                            src="/assets/img/destination/1.jpg"
+                            alt="Image Description"
+                          />
+                        </div>
+                        <div className="grow">
+                          <div className="flex p-4 items-start flex-col text-start">
+                            <h3 className="font-semibold tracking-tight text-base text-primary">
+                              $1500
+                            </h3>
+                            <h3 className="font-semibold tracking-tight text-xl">
+                              Barcelona
+                            </h3>
+                            <p className="text-muted-foreground text-sm mb-1">
+                              4 Days/3 Nights
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      {/* End Media */}
+                      {/* Media */}
+                      <a className="group flex items-center gap-x-6" href="#">
+                        <div className="flex-shrink-0 relative rounded-lg overflow-hidden h-20 w-32">
+                          <img
+                            className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                            src="/assets/img/destination/2.jpg"
+                            alt="Image Description"
+                          />
+                        </div>
+                        <div className="grow">
+                          <div className="flex p-4 items-start flex-col text-start">
+                            <h3 className="font-semibold tracking-tight text-base text-primary">
+                              $1200
+                            </h3>
+                            <h3 className="font-semibold tracking-tight text-xl">
+                              Brazil
+                            </h3>
+                            <p className="text-muted-foreground text-sm mb-1">
+                              4 Days/3 Nights
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      {/* End Media */}
+                      {/* Media */}
+                      <a className="group flex items-center gap-x-6" href="#">
+                        <div className="flex-shrink-0 relative rounded-lg overflow-hidden h-20 w-32">
+                          <img
+                            className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                            src="/assets/img/destination/5.jpg"
+                            alt="Image Description"
+                          />
+                        </div>
+                        <div className="grow">
+                          <div className="flex p-4 items-start flex-col text-start">
+                            <h3 className="font-semibold tracking-tight text-base text-primary">
+                              $1300
+                            </h3>
+                            <h3 className="font-semibold tracking-tight text-xl">
+                              Singapore
+                            </h3>
+                            <p className="text-muted-foreground text-sm mb-1">
+                              4 Days/3 Nights
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      {/* End Media */}
+                    </div>
                   </div>
-                  {/* End Avatar Media */}
-                  <div className="space-y-6">
-                    {/* Media */}
-                    <a className="group flex items-center gap-x-6" href="#">
-                      <div className="grow">
-                        <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                          Singapore Holidays
-                        </span>
-                      </div>
-                      <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                        <img
-                          className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                          src="/assets/img/destination/1.jpg"
-                          alt="Image Description"
-                        />
-                      </div>
-                    </a>
-                    {/* End Media */}
-                    {/* Media */}
-                    <a className="group flex items-center gap-x-6" href="#">
-                      <div className="grow">
-                        <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                          Singapore Holidays
-                        </span>
-                      </div>
-                      <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                        <img
-                          className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                          src="/assets/img/destination/2.jpg"
-                          alt="Image Description"
-                        />
-                      </div>
-                    </a>
-                    {/* End Media */}
-                    {/* Media */}
-                    <a className="group flex items-center gap-x-6" href="#">
-                      <div className="grow">
-                        <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                          Singapore Holidays
-                        </span>
-                      </div>
-                      <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                        <img
-                          className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                          src="/assets/img/destination/3.jpg"
-                          alt="Image Description"
-                        />
-                      </div>
-                    </a>
-                    {/* End Media */}
+                </Card>
+                <Card className="mt-8 start-0 py-8 lg:px-8">
+                  <div>
+                    <h3 className="text-2xl mb-4 font-semibold dark:text-white ">
+                      Download
+                    </h3>
+                    <div className="space-y-6">
+                      <Button
+                        variant="outline"
+                        className="w-full p-5 text-base text-left justify-start"
+                      >
+                        <File className="mr-5" /> Travel Direction
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="w-full p-5 text-base text-left justify-start"
+                      >
+                        <File className="mr-5" /> Country Info
+                      </Button>
+                    </div>
                   </div>
-                </div>
+                </Card>
               </div>
               {/* End Sidebar */}
             </div>
           </div>
         </div>
       </LandingLayout>
+      <Footer />
     </main>
   );
 }
