@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import LandingLayout from "../components/layout/Landing";
-import Hero from "../components/Hero";
+import { Hero } from "../components/Hero";
 import { Destinations } from "../components/Destinations";
 import { About } from "../components/About";
 import { Categories } from "../components/Categories";

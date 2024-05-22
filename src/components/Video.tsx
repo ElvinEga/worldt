@@ -27,7 +27,7 @@ export const Video = () => {
             alt="Image Description"
           />
           <div className="absolute inset-0 m-auto size-12">
-            <PlayCircle className="size-20 hover:text-primary " />
+            <PlayCircle className="size-20 text-primary-foreground hover:text-primary " />
           </div>
         </Card>
       </div>

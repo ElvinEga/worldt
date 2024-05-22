@@ -28,7 +28,7 @@ export const Categories = () => {
               <CardContent className="p-4">
                 <div className="aspect-w-16 aspect-h-9">
                   <img
-                    className="w-full object-cover rounded-xl h-40 hover:scale-125 transition-transform duration-500 ease-in-out"
+                    className="w-full object-cover rounded-xl h-40 hover:scale-110 transition-transform duration-500 ease-in-out"
                     src={item.url}
                     alt={item.title}
                   />

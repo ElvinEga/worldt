@@ -55,10 +55,10 @@ export const Packages = () => {
                   className="sm:basis-1/1 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                 >
                   <Card key={index} className="w-full">
-                    <CardContent className="p-0">
+                    <CardContent className="p-0 hover:scale-110 transition-transform duration-500 ease-in-out">
                       <div className="aspect-w-16 aspect-h-9">
                         <img
-                          className="w-full object-cover rounded-xl h-72"
+                          className="w-full object-cover rounded-xl h-72 "
                           src={item.url}
                           alt={item.title}
                         />

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, Mail, Menu, Package2, Phone } from "lucide-react";
-
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -28,12 +28,32 @@ import {
 } from "@/components/ui/select";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ModeToggle";
-import React from "react";
 import Image from "next/image";
 
 export default function NavBar() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const scrollPosition = window.pageYOffset;
+    if (scrollPosition > 50) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
   return (
-    <div className="flex container w-full flex-col">
+    <div
+      className={`navbar ${
+        isSticky ? "flex  w-full flex-col" : "flex container w-full flex-col"
+      }`}
+    >
       <header className="hidden md:flex  top-0  h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
         <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
           {/* <Link
@@ -82,7 +102,13 @@ export default function NavBar() {
           </div>
         </div>
       </header>
-      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+      <header
+        className={`navbar ${
+          isSticky
+            ? "is-sticky w-full flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6"
+            : "sticky top-0 flex z-10 h-16 items-center gap-4 border-b bg-background px-4 md:px-6"
+        }`}
+      >
         <nav className="hidden flex-col justify-center gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <div className="md:mr-12">
             <Link
@@ -151,7 +177,7 @@ export default function NavBar() {
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <Link
-                      href="#"
+                      href="/"
                       className="text-muted-foreground transition-colors hover:text-foreground"
                     >
                       Home
@@ -160,7 +186,56 @@ export default function NavBar() {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>Destinations</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <NavigationMenuLink>Link</NavigationMenuLink>
+                      <ul className="flex-wrap p-2 min-w-64">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/destinations/destination1"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Destination 1
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/destinations/destination2"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Destination 2
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/destinations/destination3"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Destination 3
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/destinations/details"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Destination Details
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
                   <NavigationMenuItem>

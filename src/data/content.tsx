@@ -7,52 +7,63 @@ import {
   Server,
   UserIcon,
 } from "lucide-react";
+export const heros = [
+  {
+    img: "/assets/img/slider/slider-1.jpg",
+  },
+  {
+    img: "/assets/img/slider/slider-2.jpg",
+  },
+  {
+    img: "/assets/img/slider/slider-3.jpg",
+  },
+];
 
 export const banners = [
   {
     title: "Waking up in a far away place",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage2/banner1.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage2/banner1.png",
   },
   {
     title: "Big promotion at the end of the year",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage2/banner2.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage2/banner2.png",
   },
   {
     title: "Waking up in a far away place",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage1/walking.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage1/walking.png",
   },
   {
     title: "The Adventure starts today",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage1/advance.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage1/advance.png",
   },
   {
     title: "Start uor Journey Now",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage1/vacation.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage1/vacation.png",
   },
   {
     title: "Waking up in a far away place",
-    img: "https://travila.netlify.app/assets/imgs/page/homepage1/walking2.png",
+    img: "https://travila.netlify.app//assets/imgs/page/homepage1/walking2.png",
   },
 ];
 export const teams = [
   {
     name: "Malissa Fierro",
-    img: "assets/img/team/team-1.jpg",
+    img: "/assets/img/team/team-1.jpg",
     title: "Tour Guide",
   },
   {
-    name: "Florence Long",
-    img: "assets/img/team/team-2.jpg",
+    name: "/Florence Long",
+    img: "/assets/img/team/team-2.jpg",
     title: "Tour Guide",
   },
   {
     name: "Melvin Castillo",
-    img: "assets/img/team/team-3.jpg",
+    img: "/assets/img/team/team-3.jpg",
     title: "Tour Guide",
   },
   {
     name: "John Welsh",
-    img: "assets/img/team/team-4.jpg",
+    img: "/assets/img/team/team-4.jpg",
     title: "Tour Guide",
   },
 ];
@@ -261,42 +272,42 @@ export const destinations = {
     {
       title: "New York",
       desc: "Starting From $1500",
-      url: "assets/img/destination/1.jpg",
+      url: "/assets/img/destination/1.jpg",
     },
     {
       title: "London",
       desc: "Starting From $1500",
-      url: "assets/img/destination/2.jpg",
+      url: "/assets/img/destination/2.jpg",
     },
     {
       title: "Barcelona",
       desc: "Starting From $1500",
-      url: "assets/img/destination/3.jpg",
+      url: "/assets/img/destination/3.jpg",
     },
     {
       title: "Sydney",
       desc: "Starting From $1500",
-      url: "assets/img/destination/4.jpg",
+      url: "/assets/img/destination/4.jpg",
     },
     {
       title: "Rome",
       desc: "Starting From $1500",
-      url: "assets/img/destination/5.jpg",
+      url: "/assets/img/destination/5.jpg",
     },
     {
       title: "Singapore",
       desc: "Starting From $1500",
-      url: "assets/img/destination/6.jpg",
+      url: "/assets/img/destination/6.jpg",
     },
     {
       title: "Paris",
       desc: "Starting From $1500",
-      url: "assets/img/destination/7.jpg",
+      url: "/assets/img/destination/7.jpg",
     },
     {
       title: "Goa India",
       desc: "Starting From $1500",
-      url: "assets/img/destination/8.jpg",
+      url: "/assets/img/destination/8.jpg",
     },
   ],
 };
@@ -308,42 +319,42 @@ export const packages = {
     {
       title: "New York",
       desc: "Starting From $1500",
-      url: "assets/img/destination/1.jpg",
+      url: "/assets/img/destination/1.jpg",
     },
     {
       title: "London",
       desc: "Starting From $1500",
-      url: "assets/img/destination/2.jpg",
+      url: "/assets/img/destination/2.jpg",
     },
     {
       title: "Barcelona",
       desc: "Starting From $1500",
-      url: "assets/img/destination/3.jpg",
+      url: "/assets/img/destination/3.jpg",
     },
     {
       title: "Sydney",
       desc: "Starting From $1500",
-      url: "assets/img/destination/4.jpg",
+      url: "/assets/img/destination/4.jpg",
     },
     {
       title: "Rome",
       desc: "Starting From $1500",
-      url: "assets/img/destination/5.jpg",
+      url: "/assets/img/destination/5.jpg",
     },
     {
       title: "Singapore",
       desc: "Starting From $1500",
-      url: "assets/img/destination/6.jpg",
+      url: "/assets/img/destination/6.jpg",
     },
     {
       title: "Paris",
       desc: "Starting From $1500",
-      url: "assets/img/destination/7.jpg",
+      url: "/assets/img/destination/7.jpg",
     },
     {
       title: "Goa India",
       desc: "Starting From $1500",
-      url: "assets/img/destination/8.jpg",
+      url: "/assets/img/destination/8.jpg",
     },
   ],
 };
@@ -354,19 +365,19 @@ export const blogs = {
   data: [
     {
       title: "Top 10 Travel Hacks for Budget-Conscious Adventurers",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news.png",
+      url: "https://travila.netlify.app//assets/imgs/page/homepage1/news.png",
     },
     {
       title: "Ultimate Travel Planning Guide: 10 Tips for a Seamless Journey",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news2.png",
+      url: "https://travila.netlify.app//assets/imgs/page/homepage1/news2.png",
     },
     {
       title: "10 Off-the-Beaten-Path Travel Tips",
-      url: "https://travila.netlify.app/assets/imgs/page/homepage1/news3.png",
+      url: "https://travila.netlify.app//assets/imgs/page/homepage1/news3.png",
     },
     {
       title: "Travel in style in this 10 ten Mountain places",
-      url: "https://shreethemes.in/travosy/layouts/assets/images/listing/3.jpg",
+      url: "https://shreethemes.in/travosy/layouts//assets/images/listing/3.jpg",
     },
   ],
 };
@@ -377,42 +388,42 @@ export const categories = {
     {
       title: "Mountain",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/2.jpg",
+      url: "/assets/img/tour/2.jpg",
     },
     {
       title: "Safari",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/1.jpg",
+      url: "/assets/img/tour/1.jpg",
     },
     {
       title: "Desert",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/3.jpg",
+      url: "/assets/img/tour/3.jpg",
     },
     {
       title: "Flower",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/4.jpg",
+      url: "/assets/img/tour/4.jpg",
     },
     {
       title: "Beach",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/5.jpg",
+      url: "/assets/img/tour/5.jpg",
     },
     {
       title: "Temples",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/6.jpg",
+      url: "/assets/img/tour/6.jpg",
     },
     {
       title: "Yacht",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/single.jpg",
+      url: "/assets/img/tour/single.jpg",
     },
     {
       title: "Valley",
       desc: "356 Tours, 248 Activities",
-      url: "assets/img/tour/6.jpg",
+      url: "/assets/img/tour/6.jpg",
     },
   ],
 };

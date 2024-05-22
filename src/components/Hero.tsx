@@ -1,14 +1,38 @@
+"use client";
+
 import React from "react";
 import FilterBar from "../components/FilterBar";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { heros } from "../data/content";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <>
-      {/* Hero */}
-      <div className="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://travila.netlify.app/assets/imgs/page/homepage2/banner.png')] dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:size-full before:-z-[1] before:transform before:-translate-x-1/2">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+      <div className="relative  overflow-hidden">
+        <Carousel
+          className="w-full size-full object-cover z-0 absolute top-0 start-0 before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/90"
+          plugins={[Autoplay({ delay: 5000 })]}
+        >
+          <CarouselContent className="m-0 size-full object-cover absolute  ">
+            {heros.map((item, index) => (
+              <CarouselItem key={index} className="p-0">
+                <img
+                  className="size-full object-cover"
+                  src={item.img}
+                  alt="Image Description"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+        <div className=" relative mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
           <>
             {/* Announcement Banner */}
             <div className="flex justify-center">
@@ -40,7 +64,7 @@ const Hero = () => {
 
           <div className="text-center">
             <div className="mt-5 max-w-2xl text-center mx-auto">
-              <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+              <h1 className="block font-bold text-white text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
                 Best Travel <span className=" text-primary">Experience</span>
               </h1>
             </div>
@@ -262,4 +286,40 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export const HeroDetails = () => {
+  return (
+    <>
+      <div className="relative  overflow-hidden">
+        <Carousel
+          className="w-96 size-full object-cover z-0 absolute top-0 start-0 before:absolute before:inset-x-0 before:z-[1] before:size-full before:bg-gradient-to-t before:from-gray-900/90"
+          plugins={[Autoplay({ delay: 5000 })]}
+        >
+          <div className="m-0 size-full object-cover absolute  ">
+            <img
+              className="size-full object-cover"
+              src={heros[0].img}
+              alt="Image Description"
+            />
+          </div>
+        </Carousel>
+        <div className=" relative mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+          <div className="text-center">
+            <div className="mt-5 max-w-2xl text-center mx-auto">
+              <h1 className="block font-bold text-white text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+                Destinations
+              </h1>
+            </div>
+            {/* End Title */}
+            <div className="mt-5 max-w-3xl text-center mx-auto">
+              <p className="text-primary-foreground">
+                Home {" >> "}
+                <span className="text-primary">Destinations</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Hero */}
+    </>
+  );
+};
