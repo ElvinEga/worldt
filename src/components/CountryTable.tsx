@@ -137,11 +137,10 @@ export default function CountryTable() {
     </div>
   );
 }
-
+//@ts-ignore
 function CurrencyIcon(props) {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -160,7 +159,7 @@ function CurrencyIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function GlobeIcon(props) {
   return (
     <svg
@@ -181,7 +180,7 @@ function GlobeIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function LanguagesIcon(props) {
   return (
     <svg
@@ -205,7 +204,7 @@ function LanguagesIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function LocateIcon(props) {
   return (
     <svg
@@ -228,7 +227,7 @@ function LocateIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function MailIcon(props) {
   return (
     <svg
@@ -248,7 +247,7 @@ function MailIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function PhoneIcon(props) {
   return (
     <svg
@@ -267,7 +266,7 @@ function PhoneIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function RulerIcon(props) {
   return (
     <svg
@@ -290,7 +289,7 @@ function RulerIcon(props) {
     </svg>
   );
 }
-
+//@ts-ignore
 function TicketIcon(props) {
   return (
     <svg
