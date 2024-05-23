@@ -21,7 +21,7 @@ export default function Tour1() {
         <div>
           <HeroDetails title="Tours"></HeroDetails>
           <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-            <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
+            <div className="lg:grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
               {/* Sidebar */}
               <TourSideBar />
               {/* End Sidebar */}

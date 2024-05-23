@@ -19,7 +19,7 @@ import { Search } from "lucide-react";
 export function TourSideBar() {
   return (
     <div className="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-neutral-800">
-      <Card className="mt-8 start-0 py-8 lg:px-8">
+      <Card className="mt-8 start-0 py-8 px-8">
         <div>
           <h3 className="text-2xl mb-4 font-semibold dark:text-white ">
             Search Tour
@@ -67,7 +67,7 @@ export function TourSideBar() {
           </div>
         </div>
       </Card>
-      <Card className="mt-8 start-0 py-8 lg:px-8">
+      <Card className="mt-8 start-0 py-8 px-8">
         <div>
           <h3 className="text-2xl mb-4 font-semibold dark:text-white ">
             Category
@@ -121,7 +121,7 @@ export function TourSideBar() {
           </div>
         </div>
       </Card>
-      <Card className="mt-8 start-0 py-8 lg:px-8">
+      <Card className="mt-8 start-0 py-8 px-8">
         <div>
           <h3 className="text-2xl mb-4 font-semibold dark:text-white ">
             Price Range
@@ -134,7 +134,7 @@ export function TourSideBar() {
           </div>
         </div>
       </Card>
-      <Card className="mt-8 start-0 py-8 lg:px-8">
+      <Card className="mt-8 start-0 py-8 px-8">
         <div>
           <h3 className="text-2xl mb-4 font-semibold dark:text-white ">
             Durations
