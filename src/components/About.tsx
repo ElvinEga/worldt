@@ -11,7 +11,7 @@ export const About = () => {
           <div className="relative jos" data-jos_animation="fade-right">
             <img
               className="rounded-xl "
-              src="assets/img/about/1.jpg"
+              src="/assets/img/about/1.jpg"
               alt="Image Description"
             />
             <div className="absolute lg:flex md:flex  hidden items-center top-16 md:-end-10 -end-5 p-4 rounded-lg shadow-md dark:shadow-gray-800 bg-white dark:bg-slate-900 w-60 m-3">
