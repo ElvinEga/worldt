@@ -468,14 +468,40 @@ export default function NavBar() {
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger>Blogs</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="flex-wrap p-2 min-w-64">
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/pages/bloglist"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Blog
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/pages/blog"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Blog Single
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-              <Link
-                href="/pages/blog"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                Blog
-              </Link>
+
               <Link
                 href="#"
                 className="text-foreground transition-colors hover:text-foreground"
