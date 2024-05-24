@@ -370,7 +370,18 @@ export default function NavBar() {
                               </a>
                             </NavigationMenuLink>
                           </li>
-                          <li></li>
+                          <li>
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                href="/pages/guidesingle"
+                              >
+                                <div className="text-sm font-medium leading-none">
+                                  Single Guides
+                                </div>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
                           <NavigationMenuLink asChild>
                             <a
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
@@ -426,6 +437,18 @@ export default function NavBar() {
                             >
                               <div className="text-sm font-medium leading-none">
                                 Sign Up
+                              </div>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        <li>
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              href="/pages/comingsoon"
+                            >
+                              <div className="text-sm font-medium leading-none">
+                                Coming Soon
                               </div>
                             </a>
                           </NavigationMenuLink>
