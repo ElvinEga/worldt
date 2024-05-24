@@ -3,11 +3,13 @@
 import React, { useState, useCallback } from "react";
 import {
   Carousel,
-  CarouselContent,
-  CarouselItem,
+  CarouselIndicator,
+  CarouselMainContainer,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+  CarouselThumbsContainer,
+  SliderMainItem,
+} from "@/components/extension/carousel";
 import {
   Card,
   CardContent,
@@ -48,9 +50,9 @@ export const Testmonials = () => {
 
         <div className="flex flex-wrap lg:px-0 sm:px-8 px-8">
           <Carousel className="w-full">
-            <CarouselContent>
+            <CarouselMainContainer>
               {blogs.data.map((item, index) => (
-                <CarouselItem
+                <SliderMainItem
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                   key={index}
@@ -127,9 +129,20 @@ export const Testmonials = () => {
                       </div>
                     </div>
                   </div>
-                </CarouselItem>
+                </SliderMainItem>
               ))}
-            </CarouselContent>
+            </CarouselMainContainer>
+            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2">
+              <CarouselThumbsContainer className="gap-x-1 ">
+                {Array.from({ length: 2 }).map((_, index) => (
+                  <CarouselIndicator
+                    className="py-1"
+                    key={index}
+                    index={index}
+                  />
+                ))}
+              </CarouselThumbsContainer>
+            </div>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
