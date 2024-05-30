@@ -17,7 +17,9 @@ import { OurTeam } from "../components/OurTeam";
 import { Testmonials } from "../components/Testimonials";
 import { Stats } from "../components/Stats";
 import { Video } from "../components/Video";
+import Chatbot from "../components/Chatbot";
 import ScrollToTopButton from "../components/ui/ScrollToTopButton";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
@@ -41,7 +43,9 @@ export default function Home() {
           <OurTeam />
           <Contact />
           <Footer />
+          <Chatbot />
           <ScrollToTopButton />
+          <Toaster />
         </div>
       </LandingLayout>
     </main>
