@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import ChatLogItem from "./chat/ChatLogItem";
 import TypingAnimation from "./chat/TypingAnimation";
 import axiosChat from "../api/axiosChat";
@@ -20,6 +20,7 @@ const ChatBot = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const [chatLog, setChatLog] = useState<ChatMessage[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const chatContainerRef = useRef<HTMLDivElement>(null);
 
   const toggleChat = () => {
     setIsChatOpen((prev) => !prev);
@@ -67,6 +68,13 @@ const ChatBot = () => {
         console.log(error);
       });
   };
+
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop =
+        chatContainerRef.current.scrollHeight;
+    }
+  }, [isLoading]);
   return (
     <>
       {/* component */}
@@ -86,7 +94,7 @@ const ChatBot = () => {
         {isChatOpen && (
           <div
             id="hs-chatbot-container"
-            className={`fixed bottom-[calc(4rem+1.5rem)] right-0 mr-4 bg-muted rounded-xl w-[440px] h-[560px] z-[500] ${
+            className={`fixed bottom-[calc(4rem+1.5rem)] right-0 mr-4 bg-muted borrder-r-2 border border-gray-200 rounded-xl w-[440px] h-[560px] z-[500] ${
               isChatOpen ? "chat-open" : "chat-closed"
             }`}
           >
@@ -119,6 +127,7 @@ const ChatBot = () => {
             <div id="hs-message-container" className="px-6 pb-6">
               {/* Chat Container */}
               <div
+                ref={chatContainerRef}
                 id="chat-container"
                 className="pr-4 h-[400px]"
                 style={{
