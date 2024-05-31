@@ -44,7 +44,7 @@ export default function Home() {
           <Contact />
           <Footer />
           <Chatbot />
-          <ScrollToTopButton />
+          {/* <ScrollToTopButton /> */}
           <Toaster />
         </div>
       </LandingLayout>
