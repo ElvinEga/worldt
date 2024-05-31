@@ -6,6 +6,12 @@ import React from "react";
 import CountryTable from "../../../components/CountryTable";
 import { Card } from "../../../components/ui/card";
 import { File } from "lucide-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import the MapComponent with SSR disabled
+const MapComponentWithNoSSR = dynamic(() => import("../../../components/Map"), {
+  ssr: false,
+});
 
 export default function Destination1() {
   return (
@@ -130,7 +136,7 @@ export default function Destination1() {
                         will, which is the same as saying through shrinking from
                         toil and pain.
                       </p>
-                      <CountryTable />
+                      <MapComponentWithNoSSR />
                     </div>
                   </div>
                 </div>
