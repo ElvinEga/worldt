@@ -503,7 +503,7 @@ export default function NavBar() {
               </NavigationMenu>
 
               <Link
-                href="#"
+                href="/pages/contact"
                 className="text-foreground transition-colors hover:text-foreground"
               >
                 Contact
