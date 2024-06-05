@@ -427,3 +427,110 @@ export const categories = {
     },
   ],
 };
+
+export const navlinks = {
+  destinations: [
+    {
+      name: "Destination 1",
+      url: "/destinations/destination1",
+    },
+    {
+      name: "Destination 2",
+      url: "/destinations/destination2",
+    },
+    {
+      name: "Destination 3",
+      url: "/destinations/destination3",
+    },
+    {
+      name: "Destination Details",
+      url: "/destinations/details",
+    },
+  ],
+  tours: [
+    {
+      name: "Tour 1",
+      url: "/tours/tour1",
+    },
+    {
+      name: "Tour 2",
+      url: "/tours/tour2",
+    },
+    {
+      name: "Tour Offers",
+      url: "/tours/tour3",
+    },
+    {
+      name: "Tour Details",
+      url: "/tours/details",
+    },
+    {
+      name: "Tour Cart",
+      url: "/tours/cart",
+    },
+    {
+      name: "Tour Booking",
+      url: "/tours/booking",
+    },
+    {
+      name: "Tour Confrim",
+      url: "/tours/confirm",
+    },
+  ],
+  pages: [
+    {
+      name: "About Us",
+      url: "/pages/about",
+    },
+    {
+      name: "Team",
+      url: "/pages/team",
+    },
+    {
+      name: "Guides",
+      url: "/pages/guides",
+    },
+    {
+      name: "Single Guides",
+      url: "/pages/guidesingle",
+    },
+    {
+      name: "Testimonials",
+      url: "/pages/testimonials",
+    },
+    {
+      name: "Terms of Service",
+      url: "/pages/terms",
+    },
+    {
+      name: "Privacy Policy",
+      url: "/pages/privacy",
+    },
+    {
+      name: "Login",
+      url: "/pages/login",
+    },
+    {
+      name: "Sign Up",
+      url: "/pages/signup",
+    },
+    {
+      name: "Coming Soon",
+      url: "/pages/comingsoon",
+    },
+    {
+      name: "404",
+      url: "/pages/notfound",
+    },
+  ],
+  blogs: [
+    {
+      name: "Blog",
+      url: "/pages/bloglist",
+    },
+    {
+      name: "Blog Single",
+      url: "/pages/blog",
+    },
+  ],
+};

@@ -29,6 +29,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ModeToggle";
 import Image from "next/image";
+import { navlinks } from "../../data/content";
 
 export default function NavBar() {
   const [isSticky, setIsSticky] = useState(false);
@@ -187,54 +188,20 @@ export default function NavBar() {
                     <NavigationMenuTrigger>Destinations</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="flex-wrap p-2 min-w-64">
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/destinations/destination1"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Destination 1
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/destinations/destination2"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Destination 2
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/destinations/destination3"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Destination 3
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/destinations/details"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Destination Details
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
+                        {navlinks.destinations.map((item, index) => (
+                          <li key={index}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                href={item.url}
+                              >
+                                <div className="text-sm font-medium leading-none">
+                                  {item.name}
+                                </div>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -242,90 +209,20 @@ export default function NavBar() {
                     <NavigationMenuTrigger>Tours</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="flex-wrap p-2 min-w-64">
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/tour1"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour 1
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/tour2"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour 2
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/tour3"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour Offers
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/details"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour Details
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/cart"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour Cart
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/booking"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour Booking
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/tours/confirm"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Tour Confirm
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
+                        {navlinks.tours.map((item, index) => (
+                          <li key={index}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                href={item.url}
+                              >
+                                <div className="text-sm font-medium leading-none">
+                                  {item.name}
+                                </div>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -333,138 +230,20 @@ export default function NavBar() {
                     <NavigationMenuTrigger>Pages</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="flex-wrap p-2 min-w-64">
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/about"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                About Us
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/team"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Team
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <li>
+                        {navlinks.pages.map((item, index) => (
+                          <li key={index}>
                             <NavigationMenuLink asChild>
                               <a
                                 className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                href="/pages/guides"
+                                href={item.url}
                               >
                                 <div className="text-sm font-medium leading-none">
-                                  Guides
+                                  {item.name}
                                 </div>
                               </a>
                             </NavigationMenuLink>
                           </li>
-                          <li>
-                            <NavigationMenuLink asChild>
-                              <a
-                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                href="/pages/guidesingle"
-                              >
-                                <div className="text-sm font-medium leading-none">
-                                  Single Guides
-                                </div>
-                              </a>
-                            </NavigationMenuLink>
-                          </li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/testimonials"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Testimonials
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/terms"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Terms of Service
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/privacy"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Privacy Policy
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/login"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Login
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/signup"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Sign Up
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/comingsoon"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Coming Soon
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/notfound"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                404
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
+                        ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -472,30 +251,20 @@ export default function NavBar() {
                     <NavigationMenuTrigger>Blogs</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="flex-wrap p-2 min-w-64">
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/bloglist"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Blog
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        <li>
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                              href="/pages/blog"
-                            >
-                              <div className="text-sm font-medium leading-none">
-                                Blog Single
-                              </div>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
+                        {navlinks.blogs.map((item, index) => (
+                          <li key={index}>
+                            <NavigationMenuLink asChild>
+                              <a
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                href={item.url}
+                              >
+                                <div className="text-sm font-medium leading-none">
+                                  {item.name}
+                                </div>
+                              </a>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
