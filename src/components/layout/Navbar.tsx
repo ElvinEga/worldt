@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Mail, Menu, Package2, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDownIcon,
+  Mail,
+  Menu,
+  Package2,
+  Phone,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -27,6 +34,11 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Collapsible,
+  CollapsibleTrigger,
+  CollapsibleContent,
+} from "@/components/ui/collapsible";
 import { ModeToggle } from "../ModeToggle";
 import Image from "next/image";
 import { navlinks } from "../../data/content";
@@ -99,7 +111,12 @@ export default function NavBar() {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <Button variant="outline">Login</Button>
+            <Link
+              href="pages/login"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+            >
+              Login
+            </Link>
           </div>
         </div>
       </header>
@@ -133,41 +150,142 @@ export default function NavBar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left">
-            <nav className="grid gap-6 text-lg font-medium">
+            <nav className="grid gap-4 text-lg font-medium">
               <Link
-                href="#"
+                href="/"
                 className="flex items-center gap-2 text-lg font-semibold"
               >
-                <Package2 className="h-6 w-6" />
-                <span className="sr-only">Acme Inc</span>
+                <Image src="/logo.png" alt="logo" width={160} height={40} />
+                <span className="sr-only">WorldT</span>
               </Link>
+
               <Link
-                href="#"
+                href="/"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Dashboard
+                Home
               </Link>
+              <Collapsible className="grid gap-1">
+                <CollapsibleTrigger className="flex items-center justify-between rounded-md text-sm font-medium hover:px-3 py-3 text-gray-500 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50">
+                  <div className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground">
+                    Destinations
+                  </div>
+                  <ChevronDownIcon className="h-4 w-4 transition-transform" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-1">
+                  {navlinks.destinations.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.url}
+                      className="flex items-center gap-3 rounded-md px-3 py-2 text-base text-muted-foreground hover:text-foreground hover:bg-gray-200 dark:hover:bg-gray-800"
+                      prefetch={false}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </CollapsibleContent>
+              </Collapsible>
+              <Collapsible className="grid gap-1">
+                <CollapsibleTrigger className="flex items-center justify-between rounded-md text-sm font-medium hover:px-3 py-3 text-gray-500 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50">
+                  <div className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground">
+                    Tours
+                  </div>
+                  <ChevronDownIcon className="h-4 w-4 transition-transform" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-1">
+                  {navlinks.tours.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.url}
+                      className="flex items-center gap-3 rounded-md px-3 py-2 text-base text-muted-foreground hover:text-foreground hover:bg-gray-200 dark:hover:bg-gray-800"
+                      prefetch={false}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </CollapsibleContent>
+              </Collapsible>
+              <Collapsible className="grid gap-1">
+                <CollapsibleTrigger className="flex items-center justify-between rounded-md text-sm font-medium hover:px-3 py-3 text-gray-500 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50">
+                  <div className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground">
+                    Pages
+                  </div>
+                  <ChevronDownIcon className="h-4 w-4 transition-transform" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-1">
+                  {navlinks.pages.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.url}
+                      className="flex items-center gap-3 rounded-md px-3 py-2 text-base text-muted-foreground hover:text-foreground hover:bg-gray-200 dark:hover:bg-gray-800"
+                      prefetch={false}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </CollapsibleContent>
+              </Collapsible>
+              <Collapsible className="grid gap-1">
+                <CollapsibleTrigger className="flex items-center justify-between rounded-md text-sm font-medium hover:px-3 py-3 text-gray-500 transition-colors hover:bg-gray-200 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50">
+                  <div className="flex items-center gap-3 text-lg font-semibold text-muted-foreground hover:text-foreground">
+                    Blog
+                  </div>
+                  <ChevronDownIcon className="h-4 w-4 transition-transform" />
+                </CollapsibleTrigger>
+                <CollapsibleContent className="space-y-1">
+                  {navlinks.blogs.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.url}
+                      className="flex items-center gap-3 rounded-md px-3 py-2 text-base text-muted-foreground hover:text-foreground hover:bg-gray-200 dark:hover:bg-gray-800"
+                      prefetch={false}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </CollapsibleContent>
+              </Collapsible>
               <Link
-                href="#"
+                href="/pages/contact"
                 className="text-muted-foreground hover:text-foreground"
               >
-                Orders
+                Contact
               </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Products
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Customers
-              </Link>
-              <Link href="#" className="hover:text-foreground">
-                Settings
-              </Link>
+              <div className="w-full mt-4 flex flex-col items-center gap-4">
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="English" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="EN">English</SelectItem>
+                    <SelectItem value="FRN">French</SelectItem>
+                    <SelectItem value="JPN">Japanese</SelectItem>
+                  </SelectContent>
+                </Select>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="outline" className="w-full p-5">
+                      USD
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuItem>EUR</DropdownMenuItem>
+                    <DropdownMenuItem>AUD</DropdownMenuItem>
+                    <DropdownMenuItem>CAD</DropdownMenuItem>
+                    <DropdownMenuItem>JPN</DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
+                <Link
+                  href="/pages/login"
+                  className="w-full p-5 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9"
+                >
+                  Login
+                </Link>
+                <div className="h-8 w-full ">
+                  <ModeToggle />
+                </div>
+              </div>
             </nav>
           </SheetContent>
         </Sheet>
@@ -179,7 +297,7 @@ export default function NavBar() {
                   <NavigationMenuItem>
                     <Link
                       href="/"
-                      className="text-muted-foreground transition-colors hover:text-foreground"
+                      className="text-muted-foreground transition-colors hover:text-foreground mr-4"
                     >
                       Home
                     </Link>
