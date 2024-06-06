@@ -22,7 +22,7 @@ export const Contact = () => {
           <div className="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
             <img
               className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl w-full"
-              src="assets/img/slider/slider-2.jpg"
+              src="/assets/img/bg/tbilisi-georgia-abanotubani-bath-district-is-2023-11-27-05-08-22-utc.jpg"
               alt="Image Description"
             />
           </div>
