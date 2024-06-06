@@ -23,7 +23,7 @@ export const Video = () => {
         <Card className="relative items-center text-center w-full h-96 rounded-xl">
           <img
             className="size-full absolute top-0 start-0 object-cover rounded-xl"
-            src="assets/img/bg/video-img.jpg"
+            src="/assets/img/bg/stepantsminda-georgia-night-starry-sky-above-bea-2023-11-27-05-33-58-utc.jpg"
             alt="Image Description"
           />
           <div className="absolute inset-0 m-auto size-12">

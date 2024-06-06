@@ -9,7 +9,7 @@ export default function Login() {
     <main className="flex flex-1 flex-col">
       <LandingLayout>
         <div>
-          <HeroDetails title="Guides"></HeroDetails>
+          <HeroDetails title="Login"></HeroDetails>
           <section className="py-12 container">
             <div className="max-w-full  md:pb-4 mx-auto">
               <LoginForm />
