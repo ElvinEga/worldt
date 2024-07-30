@@ -1,10 +1,5 @@
 import React from "react";
 
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/XqW5rcdCNyX
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 export default function CountryTable() {
   return (
     <div className="border rounded-lg w-full">
