@@ -8,7 +8,7 @@ export default function NotFound() {
     <main className="flex flex-1 flex-col">
       <LandingLayout>
         <div>
-          <HeroDetails title="Guides"></HeroDetails>
+          <HeroDetails title="404"></HeroDetails>
           <section className="py-12 container">
             <div className="max-w-full  md:pb-4 mx-auto">
               <div className="text-center py-10 px-4 sm:px-6 lg:px-8">
