@@ -158,7 +158,7 @@ export const HowItWorks = () => {
                   >
                     <img
                       className="shadow-xl shadow-gray-200 rounded-xl dark:shadow-gray-900/20"
-                      src="/assets/img/blog/1.jpg"
+                      src="/assets/img/blog/kvareli-georgia-2023-11-27-05-08-16-utc.jpg"
                       alt="Image Description"
                     />
                   </div>

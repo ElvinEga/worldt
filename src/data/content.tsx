@@ -9,13 +9,13 @@ import {
 } from "lucide-react";
 export const heros = [
   {
-    img: "/assets/img/slider/slider-1.jpg",
+    img: "/assets/img/slider/slider1.jpg",
   },
   {
-    img: "/assets/img/slider/slider-2.jpg",
+    img: "/assets/img/slider/slider2.jpg",
   },
   {
-    img: "/assets/img/slider/slider-3.jpg",
+    img: "/assets/img/slider/slider3.jpg",
   },
 ];
 
@@ -270,44 +270,44 @@ export const destinations = {
   desc: "Navigate the Globe with Confidence.",
   data: [
     {
-      title: "New York",
+      title: "Alaverdi",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/1.jpg",
+      url: "/assets/img/destination/alaverdi-monastery.jpg",
     },
     {
-      title: "London",
+      title: "Borjomi Samtskhe",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/2.jpg",
+      url: "/assets/img/destination/borjomi-samtskhe.jpg",
     },
     {
-      title: "Barcelona",
+      title: "Kakheti Region",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/3.jpg",
+      url: "/assets/img/destination/kakheti-region-georgia-ancient-rock-hewn-georgia-2023-11-27-04-55-21-utc.jpg",
     },
     {
-      title: "Sydney",
+      title: "Mtskheta Georgia",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/4.jpg",
+      url: "/assets/img/destination/mtskheta-georgia-svetitskhoveli-cathedral-living-2023-11-27-05-19-47-utc.jpg",
     },
     {
-      title: "Rome",
+      title: "Tbilisi",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/5.jpg",
+      url: "/assets/img/destination/tbilisi-georgia-abanotubani-bath-district-is-2023-11-27-05-08-22-utc.jpg",
     },
     {
-      title: "Singapore",
+      title: "The Valley Of Georgian Military Highway, Caucasus",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/6.jpg",
+      url: "/assets/img/destination/the-valley-of-georgian-military-highway-caucasus-2023-11-27-05-08-37-utc.jpg",
     },
     {
-      title: "Paris",
+      title: "Zhinvalskoe reservoir Georgia",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/7.jpg",
+      url: "/assets/img/destination/zhinvalskoe-reservoir-georgia-2023-11-27-04-53-06-utc.jpg",
     },
     {
-      title: "Goa India",
+      title: "Bagrati Cathedral Kutaisi, Georgia",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/8.jpg",
+      url: "/assets/img/destination/bagrati-cathedral-kutaisi-georgia-2024-05-31-00-31-03-utc.jpg",
     },
   ],
 };
@@ -317,44 +317,44 @@ export const packages = {
   desc: "Quality as judged by customers. Book at the ideal price!",
   data: [
     {
-      title: "New York",
+      title: "Alaverdi",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/1.jpg",
+      url: "/assets/img/destination/alaverdi-monastery.jpg",
     },
     {
-      title: "London",
+      title: "Borjomi Samtskhe",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/2.jpg",
+      url: "/assets/img/destination/borjomi-samtskhe.jpg",
     },
     {
-      title: "Barcelona",
+      title: "Kakheti Region",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/3.jpg",
+      url: "/assets/img/destination/kakheti-region-georgia-ancient-rock-hewn-georgia-2023-11-27-04-55-21-utc.jpg",
     },
     {
-      title: "Sydney",
+      title: "Mtskheta Georgia",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/4.jpg",
+      url: "/assets/img/destination/mtskheta-georgia-svetitskhoveli-cathedral-living-2023-11-27-05-19-47-utc.jpg",
     },
     {
-      title: "Rome",
+      title: "Tbilisi",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/5.jpg",
+      url: "/assets/img/destination/tbilisi-georgia-abanotubani-bath-district-is-2023-11-27-05-08-22-utc.jpg",
     },
     {
-      title: "Singapore",
+      title: "Caucasus",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/6.jpg",
+      url: "/assets/img/destination/the-valley-of-georgian-military-highway-caucasus-2023-11-27-05-08-37-utc.jpg",
     },
     {
-      title: "Paris",
+      title: "Zhinvalskoe reservoir Georgia",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/7.jpg",
+      url: "/assets/img/destination/zhinvalskoe-reservoir-georgia-2023-11-27-04-53-06-utc.jpg",
     },
     {
-      title: "Goa India",
+      title: "Bagrati Cathedral Kutaisi",
       desc: "Starting From $1500",
-      url: "/assets/img/destination/8.jpg",
+      url: "/assets/img/destination/bagrati-cathedral-kutaisi-georgia-2024-05-31-00-31-03-utc.jpg",
     },
   ],
 };
